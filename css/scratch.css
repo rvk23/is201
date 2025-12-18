@@ -1,52 +1,79 @@
-/* Scratch Page Specific Styles */
+/* scratch.css - Custom styles for Scratch Page */
 
-/* Video and Tableau containers */
-.video-container, .tableau-container {
-    margin: 20px auto;
+/* Section Introduction */
+.section.intro {
+    background-color: #e0f0ff; /* Light blue for intro */
     text-align: center;
-    background-color: #e6f0ff;
-    padding: 15px;
-    border-radius: 10px;
+    padding: 30px;
+    border-left: 6px solid #002855; /* Navy accent */
 }
 
-/* Headings on scratch page */
-h2, h3 {
+/* Video Container */
+.video-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-left: 6px solid #0044aa; /* Slightly different accent */
+    margin-bottom: 25px;
+}
+
+/* Tableau Container */
+.tableau-container {
+    background-color: #fff3e6; /* Light peach */
+    padding: 20px;
+    border-left: 6px solid #ff6600; /* Orange accent */
+    margin-bottom: 25px;
+}
+
+/* Extra Section */
+.section.extra {
+    background-color: #e6ffe6; /* Light green */
+    padding: 20px;
+    border-left: 6px solid #009933; /* Green accent */
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Headings inside sections */
+.section h2, .section h3 {
     color: #002855;
-    text-align: center;
+    margin-bottom: 15px;
 }
 
-/* Paragraph styling */
-p {
-    font-family: 'Verdana', sans-serif;
-    color: #1a1a1a;
+/* Paragraphs inside sections */
+.section p {
+    font-size: 16px;
     line-height: 1.5;
+    color: #1a1a1a;
 }
 
-/* Buttons or interactive elements */
-button {
-    background-color: #002855;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #004080;
-}
-
-/* Special section styling */
-.intro {
-    background-color: #fff0f5;
-    border-left: 5px solid #ff69b4;
-    padding: 15px;
-    margin-bottom: 20px;
-}
-
-/* Optional iframe styling */
-iframe {
-    border: none;
+/* Responsive Iframes */
+.video-container iframe,
+.tableau-container iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
     border-radius: 8px;
-    max-width: 100%;
+}
+
+/* Back link styling */
+.section a {
+    color: #0044aa;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.section a:hover {
+    text-decoration: underline;
+}
+
+/* Extra spacing for smaller screens */
+@media screen and (max-width: 768px) {
+    .video-container iframe,
+    .tableau-container iframe {
+        height: 300px;
+    }
+    
+    .section {
+        padding: 15px;
+    }
 }
