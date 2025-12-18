@@ -10,27 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scratch Page</title>
     <link rel="stylesheet" href="../css/styles.css"> <!-- Shared CSS -->
-    <style>
-        /* Page-specific styles */
-        .video-container, .tableau-container {
-            margin: 20px auto;
-            text-align: center;
-        }
-
-        iframe {
-            border: none;
-            border-radius: 8px;
-            max-width: 100%;
-        }
-
-        h2 {
-            color: #002855;
-        }
-
-        p {
-            margin-bottom: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/scratch.css"> <!-- Custom Scratch Styles -->
 </head>
 <body>
 
@@ -43,26 +23,38 @@
         <a href="app.html">AI App</a>
     </div>
 
+    <!-- Main Container -->
     <div class="container">
-        <h2>Scratch Page</h2>
-        <p>Here is some highlights of my favorite NHL team the Toronto Maples Leafs. Hightlighrs are from this year against Chicago blackhawks.</p>
 
-        <!-- YouTube Video -->
-    <div class="video-container">
-        <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/vklMtxsxgX8" 
-            title="Leafs Vs. BlackHawks highlights" allowfullscreen>
-        </iframe>
-    </div>
+        <!-- Section 1: Introduction -->
+        <div class="section intro">
+            <h2>Scratch Page</h2>
+            <p>Here are highlights of my favorite NHL team, the Toronto Maple Leafs, from this year against the Chicago Blackhawks.</p>
+        </div>
 
+        <!-- Section 2: YouTube Video -->
+        <div class="section video-container">
+            <h3>Video Highlights</h3>
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/vklMtxsxgX8" 
+                title="Leafs Vs. BlackHawks highlights" allowfullscreen>
+            </iframe>
+        </div>
 
-        <p>Back to <a href="../index.html">Home</a></p>
+        <!-- Section 3: Tableau Graph -->
+        <div class="section tableau-container">
+            <h3>Interactive Tableau Graph</h3>
+            <iframe src="https://public.tableau.com/views/WorldIndicators/GDPperCapita" 
+                width="800" height="600" allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Back link -->
+        <div class="section">
+            <p>Back to <a href="../index.html">Home</a></p>
+        </div>
+
     </div>
 
 </body>
 </html>
-
-
-
-
-
