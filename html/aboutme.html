@@ -1,4 +1,4 @@
-<!--Comment here
+<!--
     Rylan Van Komen
     IS 201
     12/3/25
@@ -9,29 +9,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Shared CSS -->
+    <style>
+        /* Page-specific styles */
+        .images {
+            display: flex;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .images img {
+            border-radius: 8px;
+        }
+
+        ol li ul li {
+            font-style: normal;
+        }
+
+        h4 {
+            color: #002855;
+        }
+    </style>
 </head>
 <body>
-    <a href="../index.html" id="top">Home</a> |
-    <a href="resume.html">Resume</a> |
-    <a href="#">About ME</a><br><br>
 
-    <h4>About Me</h4>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="scratch.html">Scratch Page</a>
+        <a href="app.html">AI App</a>
+    </div>
 
-    <p>Something Interesting</p>
+    <div class="container">
+        <h4 id="top">About Me</h4>
 
-    <img src="../images/engaged.png" height="150" alt="Me and Kandace Engaged">
-    <img src="../images/together.png" height="150" alt="Me and Kandace">
+        <p>Hello! My name is Rylan Van Komen. Here’s a little about me and my interests.</p>
 
-    <ol>
-        <li>First Point
-            <ul>
-                <li>First subpoint</li>
-                <li>Second subpoint</li>
-            </ul>
-        </li>
-        <li>Second Point</li>
-    </ol>
-    Back to the  <a href="#top">top</a>
+        <div class="images">
+            <img src="../images/engaged.png" height="150" alt="Me and Kandace Engaged">
+            <img src="../images/together.png" height="150" alt="Me and Kandace">
+        </div>
+
+        <ol>
+            <li>First Point
+                <ul>
+                    <li>First subpoint</li>
+                    <li>Second subpoint</li>
+                </ul>
+            </li>
+            <li>Second Point</li>
+        </ol>
+
+        <p>Check out my <a href="scratch.html">Scratch Page</a> or my <a href="app.html">AI App</a>!</p>
+
+        <p>Back to the <a href="#top">top</a></p>
+    </div>
+
 </body>
 </html>
