@@ -1,1 +1,52 @@
+/* Scratch Page Specific Styles */
 
+/* Video and Tableau containers */
+.video-container, .tableau-container {
+    margin: 20px auto;
+    text-align: center;
+    background-color: #e6f0ff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Headings on scratch page */
+h2, h3 {
+    color: #002855;
+    text-align: center;
+}
+
+/* Paragraph styling */
+p {
+    font-family: 'Verdana', sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+}
+
+/* Buttons or interactive elements */
+button {
+    background-color: #002855;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004080;
+}
+
+/* Special section styling */
+.intro {
+    background-color: #fff0f5;
+    border-left: 5px solid #ff69b4;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Optional iframe styling */
+iframe {
+    border: none;
+    border-radius: 8px;
+    max-width: 100%;
+}
