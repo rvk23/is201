@@ -1,1 +1,49 @@
 
+
+/* Shared CSS for all pages */
+
+/* Body settings */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #002855;
+    padding: 12px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Main container for page content */
+.container {
+    padding: 25px;
+}
+
+/* Section divs */
+.section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+/* Highlight text */
+.highlight {
+    color: maroon;
+    font-style: italic;
+}
