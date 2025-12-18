@@ -1,20 +1,19 @@
+/* styles.css - Shared site-wide styling */
 
-
-/* Shared CSS for all pages */
-
-/* Body settings */
+/* Global Body Styles */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f6f8;
     color: #1a1a1a;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
-/* Navbar styling */
+/* Navbar */
 .navbar {
     background-color: #002855;
-    padding: 12px;
+    padding: 12px 20px;
     text-align: center;
 }
 
@@ -23,27 +22,98 @@ body {
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .navbar a:hover {
     text-decoration: underline;
 }
 
-/* Main container for page content */
+/* Container for Page Content */
 .container {
-    padding: 25px;
+    padding: 25px 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
-/* Section divs */
+/* Sections */
 .section {
     background-color: white;
     padding: 20px;
     margin-bottom: 25px;
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Highlight text */
+/* Highlighted Text */
 .highlight {
     color: maroon;
     font-style: italic;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    color: #002855;
+    margin-top: 0;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Links */
+a {
+    color: #0044aa;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Quick anchor links inside pages */
+.section-links a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #0044aa;
+}
+
+.section-links a:hover {
+    text-decoration: underline;
+}
+
+/* Form elements (e.g., AI app or Scratch page) */
+input[type="number"], input[type="text"], button {
+    padding: 8px 12px;
+    margin-top: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    cursor: pointer;
+    background-color: #002855;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #0044aa;
+}
+
+/* Responsive Video and Tableau containers */
+.video-container, .tableau-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+iframe {
+    max-width: 100%;
+    border: none;
+    border-radius: 8px;
 }
