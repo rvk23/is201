@@ -1,33 +1,69 @@
+<!--
+    Rylan Van Komen
+    IS 201
+    12/3/25
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scratch Page</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Shared CSS -->
+    <style>
+        /* Page-specific styles */
+        .video-container, .tableau-container {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        iframe {
+            border: none;
+            border-radius: 8px;
+            max-width: 100%;
+        }
+
+        h2 {
+            color: #002855;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
 
-<div class="navbar">
-    <a href="../index.html">Home</a>
-    <a href="resume.html">Resume</a>
-    <a href="aboutme.html">About Me</a>
-    <a href="scratch.html">Scratch Page</a>
-    <a href="app.html">AI App</a>
-</div>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="scratch.html">Scratch Page</a>
+        <a href="app.html">AI App</a>
+    </div>
 
-<div class="container">
-    <h2>Scratch Page</h2>
-    <p>Here’s my embedded YouTube video and Tableau graph!</p>
+    <div class="container">
+        <h2>Scratch Page</h2>
+        <p>Here’s my embedded YouTube video and Tableau graph!</p>
 
-    <!-- YouTube video -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" 
-    title="YouTube video" frameborder="0" allowfullscreen></iframe>
+        <!-- YouTube Video -->
+        <div class="video-container">
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/VIDEO_ID" 
+                title="YouTube video" allowfullscreen>
+            </iframe>
+        </div>
 
-    <!-- Tableau placeholder -->
-    <iframe src="https://public.tableau.com/views/YOUR_GRAPH" 
-    width="800" height="600" frameborder="0"></iframe>
-</div>
+        <!-- Tableau Graph -->
+        <div class="tableau-container">
+            <iframe src="https://public.tableau.com/views/YOUR_GRAPH" 
+                width="800" height="600">
+            </iframe>
+        </div>
+
+        <p>Back to <a href="../index.html">Home</a></p>
+    </div>
 
 </body>
 </html>
