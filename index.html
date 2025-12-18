@@ -1,13 +1,35 @@
+<!--
+    Rylan Van Komen
+    IS 201
+    12/3/25
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homer Simpson's Home Page</title>
-    <link rel="stylesheet" href="css/styles.css"> <!-- Link your CSS -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Shared CSS -->
+    <style>
+        /* Page-specific styles */
+        h1 {
+            color: #002855;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .container img {
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 
+    <!-- Navbar -->
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="html/resume.html">Resume</a>
@@ -16,9 +38,11 @@
         <a href="html/app.html">AI App</a>
     </div>
 
+    <!-- Main Content -->
     <div class="container">
-        <h1>Home Page</h1>
-        <img src="images/meAndJelly.png" height="150" alt="Me by jelly bean guy png">
+        <h1>Welcome to My Home Page</h1>
+        <p>Hello! I’m Rylan Van Komen. Navigate through the site to learn more about me, my work, and fun projects!</p>
+        <img src="images/meAndJelly.png" height="150" alt="Me with jelly beans">
     </div>
 
 </body>
