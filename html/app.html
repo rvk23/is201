@@ -1,60 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Number Guessing Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI App: Number Guessing Game</title>
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Your shared CSS -->
+    <style>
+        /* Game-specific styles */
+        .box {
+            background: white;
+            padding: 30px;
+            width: 300px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
 
-<style>
-body {
-    font-family: Arial;
-    text-align: center;
-    background-color: #eef2f3;
-}
+        button {
+            padding: 8px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            background-color: #002855;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
 
-.box {
-    background: white;
-    padding: 30px;
-    width: 300px;
-    margin: 80px auto;
-    border-radius: 10px;
-}
+        button:hover {
+            background-color: #0044aa;
+        }
 
-button {
-    padding: 8px 15px;
-    margin-top: 10px;
-}
-</style>
+        input[type=number] {
+            width: 60px;
+            padding: 5px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        #result {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="box">
-    <h2>Guess the Number 🎯</h2>
-    <p>I’m thinking of a number between 1 and 10.</p>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="scratch.html">Scratch Page</a>
+        <a href="app.html">AI App</a>
+    </div>
 
-    <input type="number" id="guess">
-    <br>
-    <button onclick="checkGuess()">Guess</button>
+    <!-- Game Container -->
+    <div class="container">
+        <div class="box">
+            <h2>Guess the Number 🎯</h2>
+            <p>I’m thinking of a number between 1 and 10.</p>
 
-    <p id="result"></p>
+            <input type="number" id="guess" min="1" max="10">
+            <br>
+            <button onclick="checkGuess()">Guess</button>
 
-    <a href="scratch.html">← Back to Scratch Page</a>
-</div>
+            <p id="result"></p>
 
-<script>
-const secret = Math.floor(Math.random() * 10) + 1;
+            <a href="scratch.html">← Back to Scratch Page</a>
+        </div>
+    </div>
 
-function checkGuess() {
-    const guess = document.getElementById("guess").value;
-    const result = document.getElementById("result");
+    <script>
+        const secret = Math.floor(Math.random() * 10) + 1;
 
-    if (guess == secret) {
-        result.textContent = "Correct! 🎉";
-    } else {
-        result.textContent = "Try again!";
-    }
-}
-</script>
+        function checkGuess() {
+            const guess = document.getElementById("guess").value;
+            const result = document.getElementById("result");
+
+            if (!guess) {
+                result.textContent = "Please enter a number!";
+                return;
+            }
+
+            if (guess == secret) {
+                result.textContent = "Correct! 🎉";
+            } else if (guess < secret) {
+                result.textContent = "Too low! Try again.";
+            } else {
+                result.textContent = "Too high! Try again.";
+            }
+        }
+    </script>
 
 </body>
 </html>
